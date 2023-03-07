@@ -464,6 +464,12 @@ section{
             margin: auto;
             justify-content: center;
             }
+            #warnings{
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                line-height: 25x;
+            }
         }
     }
     
@@ -599,6 +605,50 @@ section{
             height: 100%;
             background-color: var(--color-secondary);
             transform: translateX(0);
+        }
+    }
+}
+
+//Boton "Enviado"
+.btn-con2{
+    display: flex;
+    width: 100%;
+}
+.main-btn2{
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 300;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    .btn-text2{
+        padding: 0 2rem;
+        border: none;
+        background-color: inherit;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        cursor: default;
+    }
+    .btn-icon2{
+        background-color: var(--color-secondary);
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            transition: .4s ease-in-out;
+            transform: scale(1.5);
         }
     }
 }
