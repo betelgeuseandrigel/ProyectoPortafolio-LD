@@ -38,6 +38,9 @@
                 font-size: 2.5rem !important;
                 padding-top: 1rem;
             }
+            .btn-text{
+                padding: 0 1rem;
+            }
         }
     }
 
@@ -58,12 +61,19 @@
 
     .contact-container{
         .main-title{
-            padding-right: 2rem;
+            h2{
+             padding: 0 2rem;
+            }
+            .bg-text{
+                //padding: 0 0 0 1rem;
+                font-size: 2rem;
+            }
         }
     }
 
     .contact-content-con{
         flex-direction: column;
+        padding-top: 0;
         .left-contact{
             .contact-info{
                 .contact-item{

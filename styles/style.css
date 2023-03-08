@@ -705,6 +705,9 @@ section {
     font-size: 2.5rem !important;
     padding-top: 1rem;
   }
+  .header-content .right-header .btn-text {
+    padding: 0 1rem;
+  }
   .about-stats .progress-bars {
     grid-template-columns: 1fr;
   }
@@ -712,11 +715,15 @@ section {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
-  .contact-container .main-title {
-    padding-right: 2rem;
+  .contact-container .main-title h2 {
+    padding: 0 2rem;
+  }
+  .contact-container .main-title .bg-text {
+    font-size: 2rem;
   }
   .contact-content-con {
     flex-direction: column;
+    padding-top: 0;
   }
   .contact-content-con .left-contact .contact-info .contact-item {
     justify-content: flex-start;
