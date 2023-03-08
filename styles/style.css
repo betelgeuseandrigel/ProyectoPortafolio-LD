@@ -419,7 +419,7 @@ section {
 .contact-content-con .left-contact .contact-icon a {
   display: flex;
   align-items: center;
-  color: var(--color-white);
+  color: #13dbd8;
   background-color: var(--color-grey-4);
   cursor: pointer;
   justify-content: center;
@@ -585,7 +585,7 @@ section {
   padding: 0 2rem;
   border: none;
   background-color: inherit;
-  color: white;
+  color: #040404;
   font-size: 20px;
   display: flex;
   justify-content: space-between;
@@ -645,7 +645,7 @@ section {
   padding: 0 2rem;
   border: none;
   background-color: inherit;
-  color: white;
+  color: #040404;
   font-size: 20px;
   display: flex;
   align-items: center;
