@@ -4,6 +4,7 @@ const sectBtn = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
 
 
+
 function pageTransitions() {
     //Button click active class
     for(let i = 0; i < sectBtn.length; i++){
@@ -35,10 +36,14 @@ function pageTransitions() {
     })
 
     //toggle them
+    const bigText = document.querySelector(".bg-text");
+    const bigTextDos = document.querySelector(".textDos")
     const themeBtn = document.querySelector(".theme-btn");
     themeBtn.addEventListener("click", () => {
         let element = document.body;
         element.classList.toggle("light-mode");
+        bigText.remove();
+        bigTextDos.remove();
     })
 }
 
