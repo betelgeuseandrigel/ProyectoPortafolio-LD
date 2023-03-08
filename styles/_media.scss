@@ -88,6 +88,7 @@
         }
     }
 
+
     .btn-con2{
         padding-bottom: 2rem;
         .main-btn2{
@@ -95,10 +96,13 @@
             .btn-icon2{
                 display: flex;
                 align-items: center;
+                border-radius: inherit;
+                width: 50%;
             }
         }
     }
 
+    
     .section{
         padding: 2rem 2.5rem !important;
     }
