@@ -35,6 +35,23 @@
     --color-grey-6: #12181b;
 }
 
+.mode-text1{
+    
+    padding: 0 2rem;
+    border: none;
+    background-color: inherit;
+    color: var(--color-grey-3);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
 
 
 body{

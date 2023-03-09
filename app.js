@@ -36,6 +36,7 @@ function pageTransitions() {
     })
 
     //toggle them
+    const btnTexto1 = document.querySelector(".btn-text1");
     const bigText = document.querySelector(".bg-text");
     const bigTextDos = document.querySelector(".textDos")
     const themeBtn = document.querySelector(".theme-btn");
@@ -44,6 +45,7 @@ function pageTransitions() {
         element.classList.toggle("light-mode");
         bigText.remove();
         bigTextDos.remove();
+        btnTexto1.classList.replace("btn-text1", "mode-text1");
     })
 }
 
