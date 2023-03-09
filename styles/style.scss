@@ -172,7 +172,7 @@ section{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: var(--color-grey-4);
+    background-color: var(--color-secondary);
     cursor: pointer;
     position: fixed;
     display: flex;
@@ -183,7 +183,7 @@ section{
     &:active{ transform: translateY(-3px); }
     i{
         font-size: 1.4rem;
-        color: var(--color-grey-2);
+        color: var(--color-white);
         pointer-events: none;
     }
 }
