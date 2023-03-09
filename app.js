@@ -45,7 +45,6 @@ function pageTransitions() {
         element.classList.toggle("light-mode");
         bigText.remove();
         bigTextDos.remove();
-        btnTexto1.classList.replace("btn-text1", "mode-text1");
     })
 }
 
