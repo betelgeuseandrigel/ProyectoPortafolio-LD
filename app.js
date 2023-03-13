@@ -69,7 +69,7 @@ const fragment = document.createDocumentFragment();
 const segundoicono = document.querySelector(".btn-icon2");
 
 
-boton.addEventListener("click", (e) => {
+boton.addEventListener("submit", (e) => {
     e.preventDefault();
     e.stopPropagation();
     let warnings = "";
