@@ -71,7 +71,6 @@ const segundoicono = document.querySelector(".btn-icon2");
 
 boton.addEventListener("submit", (e) => {
     e.preventDefault();
-    e.stopPropagation();
     let warnings = "";
     let entrar = false; //Aqui hay un cambio a true para la prueba pero es falso
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
@@ -88,16 +87,14 @@ boton.addEventListener("submit", (e) => {
         parrafo.innerHTML = warnings;
     }else{
         boton.remove();
-        //contenedor.append(span);
-        //span.innerText = "Enviado";
-        //
+        contenedor.append(span);
+        span.innerText = "Enviado";
        for(i = 0; i < input1.length; i++){
                 input1[i].value = "";
        }
        //contenedor.append(icon);
-       btnEnviar.appendChild(textData);
+      // btnEnviar.appendChild(textData);
     
-        console.log("hola");
        
  }    
 })
