@@ -39,6 +39,7 @@ function pageTransitions() {
     const btnTexto1 = document.querySelector(".btn-text1");
     const bigText = document.querySelector(".bg-text");
     const bigTextDos = document.querySelector(".textDos")
+
     const themeBtn = document.querySelector(".theme-btn");
     themeBtn.addEventListener("click", () => {
         let element = document.body;
@@ -86,7 +87,7 @@ boton.addEventListener("submit", (e) => {
     if(entrar){
         parrafo.innerHTML = warnings;
     }else{
-        boton.remove();
+       // boton.remove();
         contenedor.append(span);
         span.innerText = "Enviado";
        for(i = 0; i < input1.length; i++){
