@@ -87,15 +87,13 @@ boton.addEventListener("click", (e) => {
     if(entrar){
         parrafo.innerHTML = warnings;
     }else{
-       // boton.remove();
+        boton.remove();
         contenedor.append(span);
-        span.innerText = "Enviado";
+
        for(i = 0; i < input1.length; i++){
                 input1[i].value = "";
        }
-       //contenedor.append(icon);
-      // btnEnviar.appendChild(textData);
-    
+        btnEnviar.appendChild(textData);
        
  }    
 })
