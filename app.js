@@ -70,7 +70,7 @@ const fragment = document.createDocumentFragment();
 const segundoicono = document.querySelector(".btn-icon2");
 
 
-boton.addEventListener("submit", (e) => {
+boton.addEventListener("click", (e) => {
     e.preventDefault();
     let warnings = "";
     let entrar = false; //Aqui hay un cambio a true para la prueba pero es falso
