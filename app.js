@@ -52,50 +52,12 @@ function pageTransitions() {
 pageTransitions();
 
 
-const nombre = document.getElementById("name");
-const email = document.getElementById("email");
-const form = document.getElementById("form");
-const parrafo = document.getElementById("warnings");
-const boton = document.querySelector(".main-btn1");
-const span = document.createElement("span");
-const contenedor = document.querySelector(".btn-con1");
-const claseNueva = document.querySelector(".new");
-const icon = document.querySelector(".btn-icon1");
-//const input0 = document.querySelector(".input-control")
-//const input1 =  document.querySelectorAll(".vaciar");
-const btnEnviar = document.querySelector(".btn-enviar");
-const template = document.querySelector(".template-btn");
-const textData = template.content.cloneNode(true);
-const fragment = document.createDocumentFragment();
-const segundoicono = document.querySelector(".btn-icon2");
+const fecha = document.querySelector(".fecha");
+function tiempoActual() {
+    const actual = new Date();
+    let actualDia = actual.toLocaleDateString();
+    fecha.textContent = actualDia;
+};
 
+tiempoActual();
 
-boton.addEventListener("submit", (e) => {
-    e.preventDefault();
-    let warnings = "";
-    let entrar = false; //Aqui hay un cambio a true para la prueba pero es falso
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
-    parrafo.innerHTML = "";
-    if(nombre.value.length <6){
-        warnings += `El nombre no es valido <br>`;
-        entrar = true; //cambio
-    }
-    if(!regexEmail.test(email.value)){
-        warnings += `El email no es valido <br>`;
-        entrar = true; //cambio
-    }
-    if(entrar){
-        parrafo.innerHTML = warnings;
-    }else{
-        boton.remove();
-        contenedor.append(span);
-
-       for(i = 0; i < input1.length; i++){
-                input1[i].value = "";
-       }
-        btnEnviar.appendChild(textData);
-    
-       
-       
- }    
-})

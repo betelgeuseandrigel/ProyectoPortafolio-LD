@@ -236,6 +236,10 @@ section{
         grid-row: 1;
         padding-left: 15rem;
         margin-top: 50px;
+        .fecha{
+            font-family: consolas, monospace;
+            font-size: 30px;
+        }
         .name{
             font-size: 3rem;
             span{
@@ -392,7 +396,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 3.5rem;
+    padding-top: 7.5rem;
     .left-contact{
         display: flex;
         flex-direction: column;
@@ -454,58 +458,7 @@ section{
                 }
             }
         }
-    }
-    .right-contact{
-        display: flex;
-        flex-direction: column;
-        margin-left: 2rem;
-        align-items: center;
-        .contact-form{
-            width: 400px;
-        }
-        .input-control{
-            margin: 1.5rem 0;
-            input, textarea{
-                border-radius: 30px;
-                font-family: inherit;
-                font-weight: inherit;
-                font-size: inherit;
-                padding: .8rem 1.1rem;
-                outline: none;
-                border: none;
-                background-color: var(--color-grey-5);
-                width: 100%;
-                color: var(--color-grey-1);
-                resize: none;
-                font-weight: 800;
-            }
-        }
-        .i-c-2{
-            :last-child{
-                margin-top: inherit;
-            }
-        }
-        .boton{
-            border-radius: 30px;
-            height: 40px;
-            width: 50%;
-            color: inherit;
-            font-weight: 600;
-            border: 1px solid var(--color-secondary);
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            margin: auto;
-            justify-content: center;
-            }
-            #warnings{
-                display: flex;
-                justify-content: center;
-                padding: 10px;
-                line-height: 25x;
-            }
-        }
-    }
+    }}
     
 
 
@@ -568,7 +521,7 @@ section{
             color: var(--color-secondary);
         }
         .bg-text{
-            padding-top: 1rem;
+            padding-top: 7rem;
             position: absolute;
             top: 50%;
             left: 50%;
