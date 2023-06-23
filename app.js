@@ -61,3 +61,39 @@ function tiempoActual() {
 
 tiempoActual();
 
+
+//DigitalReloj
+
+const horario = document.querySelector(".horario");
+
+actualizarTiempo();
+setInterval(actualizarTiempo, 1000);
+
+function actualizarTiempo(){
+
+    const tiempo = new Date();  
+    horario.innerHTML = formatoTiempo(tiempo);
+
+
+    function formatoTiempo(tiempo){
+        let hrs = tiempo.getHours();
+        let mins = tiempo.getMinutes();
+        let secs = tiempo.getSeconds();
+        let amOrPm = hrs >= 12 ? "PM" : "AM";
+    
+        hrs = (hrs % 12) || 12;
+
+        hrs = digitoCero(hrs);
+        mins = digitoCero(mins);
+        secs = digitoCero(secs);
+    
+        return  `${hrs}:${mins}:${secs} ${amOrPm}`;
+    }
+
+    function digitoCero(digito){
+        digito = digito.toString();
+        return digito.length < 2 ? "0" + digito : digito;
+    }
+
+}
+
