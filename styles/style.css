@@ -6,9 +6,10 @@
 }
 
 :root {
-  --color-primary: #064a19;
-  --color-secondary: #c23ddd;
+  --color-primary: #a73737;
+  --color-secondary: #16023d;
   --color-white: #FFFFFF;
+  --color-white-two:white;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -25,6 +26,7 @@
   --color-primary: #FFFFFF;
   --color-secondary: #F56692;
   --color-white: #000;
+  --color-white-two: white;
   --color-black: #000;
   --color-grey0: #454e56;
   --color-grey-1: #6c7983;
@@ -135,7 +137,7 @@ section {
   transition: all 0.4s ease-in-out;
 }
 .controlls .active-btn i {
-  color: var(--color-white) !important;
+  color: var(--color-white-two) !important;
 }
 .controlls .control {
   padding: 1rem;
@@ -152,7 +154,7 @@ section {
 }
 .controlls .control i {
   font-size: 1.2rem;
-  color: var(--color-white);
+  color: var(--color-white-two);
   pointer-events: none;
 }
 
@@ -176,7 +178,7 @@ section {
 }
 .theme-btn i {
   font-size: 1.4rem;
-  color: var(--color-white);
+  color: var(--color-white-two);
   pointer-events: none;
 }
 
@@ -520,7 +522,7 @@ section {
   font-weight: 700;
 }
 .main-title h2 span {
-  color: var(--color-secondary);
+  color: var(--color-white);
 }
 .main-title h2 .bg-text {
   padding-top: 7rem;
